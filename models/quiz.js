@@ -21,7 +21,10 @@ const quizSchema = mongoose.Schema({
     require: true,
     default: "Enter your question here",
   },
-  image: String,
+  image: {
+    type: String,
+    default: "https://unsplash.com/photos/iJnZwLBOB1I",
+  },
   options: [
     {
       text: {
